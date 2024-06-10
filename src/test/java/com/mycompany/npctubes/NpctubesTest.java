@@ -79,4 +79,9 @@ public class NpctubesTest {
         assertEquals(-2, Npctubes.CariNilaiPangkat(Integer.MAX_VALUE, 2));
         assertEquals(-2, Npctubes.CariNilaiPangkat(2, Integer.MAX_VALUE));
     }
+
+    @Test
+    public void testPowerOfTwo() {
+        assertEquals(4, Npctubes.CariNilaiPangkat(2, 2));
+    }
 }
