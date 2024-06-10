@@ -60,4 +60,9 @@ public class NpctubesTest {
         assertEquals(1, Npctubes.CariNilaiPangkat(1, 0));
         assertEquals(1, Npctubes.CariNilaiPangkat(1, 10));
     }
+
+    @Test
+    public void testBaseZero() {
+        assertEquals(0, Npctubes.CariNilaiPangkat(0, 5));
+    }
 }
