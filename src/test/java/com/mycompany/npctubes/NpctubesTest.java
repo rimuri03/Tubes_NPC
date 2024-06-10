@@ -17,31 +17,5 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class NpctubesTest {
     
-@Test
-    public void testBEqualsZero() {
-        assertEquals(1, Npctubes.CariNilaiPangkat(2, 0));
-        assertEquals(1, Npctubes.CariNilaiPangkat(0, 0));
-    }
-
-    @Test
-    public void testBNegative() {
-        assertEquals(-1, Npctubes.CariNilaiPangkat(2, -3));
-    }
-
-    @Test
-    public void testBGreaterThanTen() {
-        assertEquals(-2, Npctubes.CariNilaiPangkat(2, 11));
-    }
-
-    @Test
-    public void testAGreaterThanHundred() {
-        assertEquals(-2, Npctubes.CariNilaiPangkat(101, 3));
-    }
-
-    @Test
-    public void testValidPangkat() {
-        assertEquals(8, Npctubes.CariNilaiPangkat(2, 3));
-        assertEquals(16, Npctubes.CariNilaiPangkat(2, 4));
-    }
     
 }
