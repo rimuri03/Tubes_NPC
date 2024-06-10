@@ -17,5 +17,10 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class NpctubesTest {
     
-    
+    @Test
+    public void testBEqualsZero() {
+        assertEquals(1, Npctubes.CariNilaiPangkat(2, 0));
+        assertEquals(1, Npctubes.CariNilaiPangkat(0, 0));
+    }
+
 }
