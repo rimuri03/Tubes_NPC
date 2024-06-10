@@ -65,4 +65,12 @@ public class NpctubesTest {
     public void testBaseZero() {
         assertEquals(0, Npctubes.CariNilaiPangkat(0, 5));
     }
+
+    @Test
+    public void testBaseNegativeOne() {
+        assertEquals(1, Npctubes.CariNilaiPangkat(-1, 0));
+        assertEquals(-1, Npctubes.CariNilaiPangkat(-1, 1));
+        assertEquals(1, Npctubes.CariNilaiPangkat(-1, 2));
+        assertEquals(-1, Npctubes.CariNilaiPangkat(-1, 3));
+    }
 }
