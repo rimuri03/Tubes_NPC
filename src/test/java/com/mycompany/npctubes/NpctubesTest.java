@@ -38,5 +38,11 @@ public class NpctubesTest {
         assertEquals(-2, Npctubes.CariNilaiPangkat(101, 3));
     }
 
+    @Test
+    public void testValidPangkat() {
+        assertEquals(8, Npctubes.CariNilaiPangkat(2, 3));
+        assertEquals(16, Npctubes.CariNilaiPangkat(2, 4));
+    }
+
 
 }
