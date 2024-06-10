@@ -54,4 +54,44 @@ public class NpctubesTest {
         assertEquals(-8, Npctubes.CariNilaiPangkat(-2, 3));
         assertEquals(16, Npctubes.CariNilaiPangkat(-2, 4));
     }
+
+    @Test
+    public void testBaseOne() {
+        assertEquals(1, Npctubes.CariNilaiPangkat(1, 0));
+        assertEquals(1, Npctubes.CariNilaiPangkat(1, 10));
+    }
+
+    @Test
+    public void testBaseZero() {
+        assertEquals(0, Npctubes.CariNilaiPangkat(0, 5));
+    }
+
+    @Test
+    public void testBaseNegativeOne() {
+        assertEquals(1, Npctubes.CariNilaiPangkat(-1, 0));
+        assertEquals(-1, Npctubes.CariNilaiPangkat(-1, 1));
+        assertEquals(1, Npctubes.CariNilaiPangkat(-1, 2));
+        assertEquals(-1, Npctubes.CariNilaiPangkat(-1, 3));
+    }
+
+    @Test
+    public void testExtremeValues() {
+        assertEquals(-2, Npctubes.CariNilaiPangkat(Integer.MAX_VALUE, 2));
+        assertEquals(-2, Npctubes.CariNilaiPangkat(2, Integer.MAX_VALUE));
+    }
+
+    @Test
+    public void testPowerOfTwo() {
+        assertEquals(4, Npctubes.CariNilaiPangkat(2, 2));
+    }
+
+    @Test
+    public void testPowerOfThree() {
+        assertEquals(27, Npctubes.CariNilaiPangkat(3, 3));
+    }
+
+    @Test
+    public void testPowerOfFive() {
+        assertEquals(125, Npctubes.CariNilaiPangkat(5, 3));
+    }
 }
