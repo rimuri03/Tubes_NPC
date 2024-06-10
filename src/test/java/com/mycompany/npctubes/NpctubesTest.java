@@ -99,4 +99,9 @@ public class NpctubesTest {
     public void testBaseTen() {
         assertEquals(100000, Npctubes.CariNilaiPangkat(10, 5));
     }
+
+    @Test
+    public void testMaxBase() {
+        assertEquals(-2, Npctubes.CariNilaiPangkat(200, 2));
+    }
 }
