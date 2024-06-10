@@ -28,4 +28,9 @@ public class NpctubesTest {
         assertEquals(-1, Npctubes.CariNilaiPangkat(2, -3));
     }
 
+    @Test
+    public void testBGreaterThanTen() {
+        assertEquals(-2, Npctubes.CariNilaiPangkat(2, 11));
+    }
+
 }
