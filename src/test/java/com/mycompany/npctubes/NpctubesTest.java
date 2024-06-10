@@ -94,4 +94,9 @@ public class NpctubesTest {
     public void testPowerOfFive() {
         assertEquals(125, Npctubes.CariNilaiPangkat(5, 3));
     }
+
+    @Test
+    public void testBaseTen() {
+        assertEquals(100000, Npctubes.CariNilaiPangkat(10, 5));
+    }
 }
