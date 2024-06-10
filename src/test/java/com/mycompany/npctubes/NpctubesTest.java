@@ -22,5 +22,11 @@ public class NpctubesTest {
         assertEquals(1, Npctubes.CariNilaiPangkat(2, 0));
         assertEquals(1, Npctubes.CariNilaiPangkat(0, 0));
     }
+
+    @Test
+    public void testBNegative() {
+        assertEquals(-1, Npctubes.CariNilaiPangkat(2, -3));
+        assertEquals(-1, Npctubes.CariNilaiPangkat(-2, -3));
+    }
     
 }
