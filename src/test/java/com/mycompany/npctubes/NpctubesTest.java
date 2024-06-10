@@ -84,4 +84,9 @@ public class NpctubesTest {
     public void testPowerOfTwo() {
         assertEquals(4, Npctubes.CariNilaiPangkat(2, 2));
     }
+
+    @Test
+    public void testPowerOfThree() {
+        assertEquals(27, Npctubes.CariNilaiPangkat(3, 3));
+    }
 }
