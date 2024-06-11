@@ -29,9 +29,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <exec.mainClass>com.mycompany.npctubes.Npctubes</exec.mainClass>
         <sonar.organization>rimuri03</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <exec.mainClass>com.mycompany.npctubes.Npctubes</exec.mainClass>
     </properties>
         <distributionManagement>
             <repository>
