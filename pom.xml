@@ -29,13 +29,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <sonar.organization>rimuri03</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <exec.mainClass>com.mycompany.npctubes.Npctubes</exec.mainClass>
     </properties>
         <distributionManagement>
             <repository>
                 <id>github</id>
                 <name>Github Packages</name>
-                <url>https://maven.pkg.github.com/rimuri03/TubesNPC</url>
+                <url>https://maven.pkg.github.com/rimuri03/Tubes_NPC</url>
             </repository>
         </distributionManagement>
 </project>
